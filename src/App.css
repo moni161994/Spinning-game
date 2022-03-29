@@ -1,0 +1,334 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 1;
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  background: url("https://static.vecteezy.com/system/resources/previews/001/993/133/original/abstract-red-sun-rays-background-free-vector.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.wrapper:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(133, 0, 0, 1) 20%,
+    rgba(252, 252, 252, 0) 50%,
+    rgba(150, 0, 0, 1) 80%
+  );
+}
+
+.wrapperInner {
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 99;
+  padding: 30px 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .headerBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.header .headerBlock p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.header .headerBlock h4 {
+  font-size: 18px;
+  color: #fff;
+}
+
+.header .headerBlock img {
+  display: block;
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footer h5 {
+  font-size: 20px;
+  color: red;
+  margin-bottom: 10px;
+}
+
+.footer .btnRed {
+  display: block;
+  padding: 12px 80px;
+  background: red;
+  border: 0;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  margin: 0 auto 4px;
+}
+
+.footer small {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 12px;
+  margin-left: 18%;
+  font-weight: 400;
+  position: relative;
+}
+
+.footer small:after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: -8px;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background: yellow;
+  transform: translate(-50%, -50%);
+}
+
+.footer .btnWhite {
+  display: block;
+  padding: 8px 30px;
+  background: #fff;
+  border: 0;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  color: red;
+  margin: 0 auto 10px;
+}
+
+.circle {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  position: relative;
+  margin: 20px auto 0;
+}
+
+.circle:after {
+  position: absolute;
+  content: "";
+  top: -10px;
+  left: -10px;
+  height: 420px;
+  width: 420px;
+  background: #000;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.circle-inner {
+  position: relative;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  animation: rotate-infinite 4s forwards ease-in;
+  overflow: hidden;
+  border: 5px solid white;
+}
+
+.btn {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  display: block;
+  background: white;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.3);
+}
+
+.btn span {
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 80px;
+  text-align: center;
+  position: absolute;
+  z-index: 99;
+  cursor: pointer;
+}
+
+.btn:after {
+  position: absolute;
+  content: "";
+  top: -8px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 20px solid #fff;
+  transform: translate(-50%, -50%);
+}
+
+.btn:before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  height: 60px;
+  width: 60px;
+  background: cyan;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle .circle-inner .triangle {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  display: block;
+  transform-origin: bottom;
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+  border-top: 200px solid;
+}
+
+.circle .circle-inner .triangle:after {
+  position: absolute;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  top: -140px;
+  left: -20px;
+  transform: rotate(95deg);
+}
+
+.triangle1 {
+  transform: translateX(-50%) rotateZ(0deg);
+  border-top-color: red !important;
+}
+
+.triangle1:after {
+  content: "100";
+}
+
+.triangle2 {
+  transform: translateX(-50%) rotateZ(40deg);
+  border-top-color: orange !important;
+}
+
+.triangle2:after {
+  content: "200";
+}
+
+.triangle3 {
+  transform: translateX(-50%) rotateZ(80deg);
+  border-top-color: green !important;
+}
+
+.triangle3:after {
+  content: "100";
+}
+
+.triangle4 {
+  transform: translateX(-50%) rotateZ(120deg);
+  border-top-color: blue !important;
+}
+
+.triangle4:after {
+  content: "100";
+}
+
+.triangle5 {
+  transform: translateX(-50%) rotateZ(160deg);
+  border-top-color: pink !important;
+}
+
+.triangle5:after {
+  content: "100";
+}
+
+.triangle6 {
+  transform: translateX(-50%) rotateZ(200deg);
+  border-top-color: black !important;
+}
+
+.triangle6:after {
+  content: "100";
+}
+
+.triangle7 {
+  transform: translateX(-50%) rotateZ(240deg);
+  border-top-color: yellow !important;
+}
+
+.triangle7:after {
+  content: "100";
+}
+
+.triangle8 {
+  transform: translateX(-50%) rotateZ(280deg);
+  border-top-color: purple !important;
+}
+
+.triangle8:after {
+  content: "100";
+}
+
+.triangle9 {
+  transform: translateX(-50%) rotateZ(320deg);
+  border-top-color: cyan !important;
+}
+
+.triangle9:after {
+  content: "100";
+}
+
+/* @keyframes start-rotate {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    transform-origin: center;
+  }
+
+  100% {
+    transform: translate(0, 0) rotate(360deg);
+    transform-origin: center;
+  }
+} */
+
+.start-rotate {
+  animation: start-rotate 1s linear infinite;
+}
+@keyframes start-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.stop-rotate {
+  animation-play-state: paused;
+}
